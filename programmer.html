@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Programmer — Bilal.</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0f1117;--bg2:#161b22;--border:#21262d;--gold:#f0b429;--text:#e6edf3;--muted:#8b949e;--radius:10px;--max:1000px}
+html{scroll-behavior:smooth}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16.5px}
+a{color:var(--gold);text-decoration:none}a:hover{text-decoration:underline}
+nav{position:sticky;top:0;z-index:100;background:rgba(15,17,23,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:.6rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.nb{font-size:1.3rem;font-weight:700;color:var(--gold)}.nl{display:flex;gap:1.5rem;list-style:none}.nl a{color:var(--muted);font-size:1.25rem;font-weight:700}.nl a:hover{color:var(--text);text-decoration:none}
+.w{max-width:var(--max);margin:0 auto;padding:0 1.5rem}
+.hero{padding:4rem 1.5rem 2.5rem;max-width:var(--max);margin:0 auto}
+.hero .em{font-size:3.5rem;display:block;margin-bottom:.75rem}
+.hero h1{font-size:2.2rem;font-weight:700;color:var(--gold);margin-bottom:.35rem}
+.hero p{color:var(--muted);font-size:.92rem}
+.back{display:inline-flex;align-items:center;gap:.4rem;color:var(--muted);font-size:.85rem;margin-bottom:2rem;transition:color .2s}.back:hover{color:var(--gold);text-decoration:none}
+.niv{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:2.5rem 0 1rem;display:flex;align-items:center;gap:.75rem}.niv::after{content:"";flex:1;height:1px;background:var(--border)}
+.sae{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;padding:1.4rem 1.6rem;margin-bottom:.85rem}
+.tag{display:inline-block;background:var(--gold);color:#0f1117;font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:.55rem}
+.sae h3{font-size:.97rem;font-weight:700;margin-bottom:.9rem}
+.lb{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:.8rem 0 .25rem}
+.sae p,.sae li{font-size:.855rem;color:var(--muted);line-height:1.65;margin:0}.sae ul{padding-left:1.1rem}.sae ul li{margin-bottom:.2rem}.sae li strong{color:var(--text)}
+.pills{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.4rem}.pill{background:#1c2128;border:1px solid #30363d;border-radius:20px;padding:3px 11px;font-size:.76rem;color:var(--muted)}
+footer{border-top:1px solid var(--border);padding:1.5rem;text-align:center;color:var(--muted);font-size:.82rem}footer a{color:var(--gold)}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nb">Bilal.</a>
+  <ul class="nl"><li><a href="index.html#accueil">Accueil</a></li><li><a href="index.html#cv">CV</a></li><li><a href="index.html#competences">Compétences</a></li><li><a href="index.html#hobby">Hobby</a></li></ul>
+</nav>
+
+<div class="hero">
+  <span class="em">🛠️</span>
+  <h1>Programmer</h1>
+  <p>Écrire des scripts et développer des outils pour automatiser et simplifier les tâches réseau</p>
+  <p style="margin-top:.3rem;font-size:.8rem;">BUT R&T — Parcours Cybersécurité — IUT de Béthune</p>
+</div>
+
+<div class="w" style="padding-bottom:5rem;">
+  <a href="index.html#competences" class="back">← Retour aux compétences</a>
+
+  <div class="niv">Première année — Premiers projets de développement</div>
+
+  <div class="sae">
+    <span class="tag">SAÉ 1.4</span>
+    <h3>Ce site — mon portfolio en ligne</h3>
+    <p class="lb">Ce qu'on devait faire</p>
+    <p>Créer un site web pour se présenter professionnellement sur Internet. Le site devait être hébergé sur GitHub Pages, responsive, et refléter notre parcours, nos compétences et notre personnalité.</p>
+    <p class="lb">Ce que j'ai appris</p>
+    <p>C'est ce site que vous êtes en train de lire ! J'ai voulu m'éloigner des templates génériques et créer quelque chose qui me ressemble vraiment, avec un design sombre et épuré. Ça m'a aussi appris à gérer un dépôt Git et à publier un site en production.</p>
+    <p class="lb">Outils & technologies</p>
+    <div class="pills"><span class="pill">HTML / CSS</span><span class="pill">GitHub Pages</span><span class="pill">Git</span><span class="pill">Design responsive</span></div>
+  </div>
+
+  <div class="sae">
+    <span class="tag">SAÉ 1.5</span>
+    <h3>Récupérer, traiter et afficher des données automatiquement</h3>
+    <p class="lb">Ce qu'on devait faire</p>
+    <p>Développer un script Python qui va chercher des données CSV sur data.gouv.fr, les traite (calculs de moyennes, valeurs max, filtres) et les envoie automatiquement à un site web pour les afficher sous forme de graphiques.</p>
+    <p class="lb">Ce que j'ai appris</p>
+    <p>Manipuler des données réelles, c'est bien différent des exercices en cours. J'ai découvert la puissance de Python pour automatiser ce genre de pipeline, et la satisfaction quand les graphiques s'affichent tout seuls après un simple script.</p>
+    <p class="lb">Outils & technologies</p>
+    <div class="pills"><span class="pill">Python</span><span class="pill">CSV & JSON</span><span class="pill">Requêtes HTTP</span><span class="pill">Visualisation de données</span><span class="pill">GitLab</span></div>
+  </div>
+
+  <div class="niv">Deuxième année — Scripting avancé et applications réseau</div>
+
+  <div class="sae">
+    <span class="tag">SAÉ 2.1</span>
+    <h3>Scripts d'automatisation et outils offensifs sur l'infrastructure</h3>
+    <p class="lb">Ce qu'on devait faire</p>
+    <p>Sur notre propre infrastructure d'entreprise, on a développé trois types de scripts : automatisation des conteneurs Docker en Bash, interception et reconstitution d'une conversation VoIP avec Python Scapy, et reconnaissance de badges par caméra avec OpenCV.</p>
+    <p class="lb">Ce que j'ai appris</p>
+    <p>Ce projet m'a montré à quel point le code peut être un outil offensif ET défensif. Reconstituer une conversation VoIP à partir de trames capturées, c'est impressionnant — et ça donne envie de tout chiffrer derrière.</p>
+    <p class="lb">Outils & technologies</p>
+    <div class="pills"><span class="pill">Bash & Docker</span><span class="pill">Python Scapy</span><span class="pill">Python OpenCV</span><span class="pill">Capture réseau</span><span class="pill">Journalisation</span></div>
+  </div>
+
+  <div class="sae">
+    <span class="tag">SAÉ 3.2</span>
+    <h3>Serveur de recherche documentaire en Python</h3>
+    <p class="lb">Ce qu'on devait faire</p>
+    <p>Développer un service client-serveur en Python capable de chercher un mot dans n'importe quel type de document (txt, PDF, HTML, Excel) et d'afficher le contexte autour du résultat.</p>
+    <p class="lb">Ce que j'ai appris</p>
+    <p>Au-delà de la technique, ce projet m'a appris à coder proprement : respect du PEP 8, docstrings, README en anglais, requirements.txt. Des habitudes qui font la différence en entreprise.</p>
+    <p class="lb">Outils & technologies</p>
+    <div class="pills"><span class="pill">Python client-serveur</span><span class="pill">PDF, Excel, HTML</span><span class="pill">PEP 8 & docstrings</span><span class="pill">GitLab</span><span class="pill">README anglais</span></div>
+  </div>
+
+</div>
+<footer><p>© 2026 Bilal Abou El Kacem &nbsp;·&nbsp; <a href="mention.html">Mentions légales</a></p></footer>
+</body>
+</html>

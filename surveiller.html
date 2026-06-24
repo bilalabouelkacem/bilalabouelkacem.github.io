@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Surveiller — Bilal.</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0f1117;--bg2:#161b22;--border:#21262d;--gold:#f0b429;--text:#e6edf3;--muted:#8b949e;--radius:10px;--max:1000px}
+html{scroll-behavior:smooth}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16.5px}
+a{color:var(--gold);text-decoration:none}a:hover{text-decoration:underline}
+nav{position:sticky;top:0;z-index:100;background:rgba(15,17,23,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:.6rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.nb{font-size:1.3rem;font-weight:700;color:var(--gold)}.nl{display:flex;gap:1.5rem;list-style:none}.nl a{color:var(--muted);font-size:1.25rem;font-weight:700}.nl a:hover{color:var(--text);text-decoration:none}
+.w{max-width:var(--max);margin:0 auto;padding:0 1.5rem}
+.hero{padding:4rem 1.5rem 2.5rem;max-width:var(--max);margin:0 auto}
+.hero .em{font-size:3.5rem;display:block;margin-bottom:.75rem}
+.hero h1{font-size:2.2rem;font-weight:700;color:var(--gold);margin-bottom:.35rem}
+.hero p{color:var(--muted);font-size:.92rem}
+.back{display:inline-flex;align-items:center;gap:.4rem;color:var(--muted);font-size:.85rem;margin-bottom:2rem;transition:color .2s}.back:hover{color:var(--gold);text-decoration:none}
+.niv{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:2.5rem 0 1rem;display:flex;align-items:center;gap:.75rem}.niv::after{content:"";flex:1;height:1px;background:var(--border)}
+.sae{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;padding:1.4rem 1.6rem;margin-bottom:.85rem}
+.tag{display:inline-block;background:var(--gold);color:#0f1117;font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:.55rem}
+.sae h3{font-size:.97rem;font-weight:700;margin-bottom:.9rem}
+.lb{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:.8rem 0 .25rem}
+.sae p,.sae li{font-size:.855rem;color:var(--muted);line-height:1.65;margin:0}.sae ul{padding-left:1.1rem}.sae ul li{margin-bottom:.2rem}.sae li strong{color:var(--text)}
+.pills{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.4rem}.pill{background:#1c2128;border:1px solid #30363d;border-radius:20px;padding:3px 11px;font-size:.76rem;color:var(--muted)}
+footer{border-top:1px solid var(--border);padding:1.5rem;text-align:center;color:var(--muted);font-size:.82rem}footer a{color:var(--gold)}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nb">Bilal.</a>
+  <ul class="nl"><li><a href="index.html#accueil">Accueil</a></li><li><a href="index.html#cv">CV</a></li><li><a href="index.html#competences">Compétences</a></li><li><a href="index.html#hobby">Hobby</a></li></ul>
+</nav>
+
+<div class="hero">
+  <span class="em">🔭</span>
+  <h1>Surveiller</h1>
+  <p>Garder un œil sur le réseau, analyser les logs et réagir vite face aux incidents</p>
+  <p style="margin-top:.3rem;font-size:.8rem;">BUT R&T — Parcours Cybersécurité — IUT de Béthune</p>
+</div>
+
+<div class="w" style="padding-bottom:5rem;">
+  <a href="index.html#competences" class="back">← Retour aux compétences</a>
+
+  <div class="niv">Deuxième année — Supervision en temps réel</div>
+
+  <div class="sae">
+    <span class="tag">SAÉ 3.3</span>
+    <h3>Centraliser tous les logs de l'infrastructure</h3>
+    <p class="lb">Ce qu'on devait faire</p>
+    <p>Dans notre infrastructure multi-sites, on a déployé un serveur Syslog centralisé qui collecte les journaux de tous les équipements : switchs, routeurs et serveurs des deux sites. Chaque équipement était configuré pour envoyer ses logs automatiquement.</p>
+    <p class="lb">Ce que j'ai appris</p>
+    <p>Quand un incident se produit, le premier réflexe c'est d'aller chercher les logs. Avoir tout centralisé au même endroit, trié par source et par type d'événement, change complètement la rapidité à laquelle on peut diagnostiquer un problème.</p>
+    <p class="lb">Outils & technologies</p>
+    <div class="pills"><span class="pill">Syslog centralisé</span><span class="pill">Configuration équipements réseau</span><span class="pill">Tri & organisation des logs</span><span class="pill">Diagnostic d'incidents</span></div>
+  </div>
+
+  <div class="sae">
+    <span class="tag">SAÉ 2.1</span>
+    <h3>Surveiller un réseau : de la caméra au capteur de température</h3>
+    <p class="lb">Ce qu'on devait faire</p>
+    <p>Sur notre infrastructure d'entreprise, on a mis en place trois systèmes de surveillance distincts : analyse du trafic réseau avec Wireshark et Scapy, supervision de la température du local serveur via des capteurs LoRa et MQTT, et contrôle d'accès par reconnaissance vidéo avec OpenCV.</p>
+    <p class="lb">Ce que j'ai appris</p>
+    <p>La surveillance d'un SI, c'est bien plus large que de regarder des alertes. Intercepter une conversation VoIP avec Scapy depuis une capture Wireshark, et comprendre pourquoi ce trafic ne devrait pas circuler en clair — ça marque. Pareil pour les capteurs IoT : voir la température du serveur remonter en temps réel sur un dashboard intranet, c'est concret et utile.</p>
+    <p class="lb">Outils & technologies</p>
+    <div class="pills"><span class="pill">Wireshark</span><span class="pill">Python Scapy</span><span class="pill">LoRa & MQTT</span><span class="pill">Python OpenCV</span><span class="pill">Dashboard temps réel</span><span class="pill">Journalisation accès</span></div>
+  </div>
+
+</div>
+<footer><p>© 2026 Bilal Abou El Kacem &nbsp;·&nbsp; <a href="mention.html">Mentions légales</a></p></footer>
+</body>
+</html>
